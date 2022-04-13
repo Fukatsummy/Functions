@@ -2,12 +2,15 @@
 #include<iostream>
 using namespace std;
 
+const int ROWS = 3;
+const int COLS = 4;
+
 int Add(int a, int b);//прототип функции(объ€вление функции-Function declaration)
 int Sub(int a, int b);//прототип состоит только из заголовка функции
 int Mul(int a, int b);//принимаемые параметры
 double Div(int a, int b);
 double Pow(double a, int b);
-double Power(double a, int b);
+//double Power(double a, int b);
 
 void main()
 {
