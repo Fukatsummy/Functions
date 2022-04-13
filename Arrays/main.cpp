@@ -238,10 +238,10 @@ double Avg(double arr[], const int n)
 {
 	return Sum(arr, n) / n;
 }
-//double Avg(int arr[ROWS][COLS], const int ROWS, const int COLS)
-//{
-//	return (double) Sum /( ROWS * COLS);
-//}
+double Avg(int arr[ROWS][COLS], const int ROWS, const int COLS)
+{
+	return (double)Sum(arr, ROWS, COLS) / (ROWS*COLS);
+}
 
 int minValueIn(int arr[], const int n)
 {
