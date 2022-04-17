@@ -54,13 +54,23 @@ void main()
 	
 	int arr2[ROWS][COLS];
 	//const int n;
+	int number1;
+	int number_of_shifts;
 	FillRand(arr2, ROWS, COLS);
 	Print(arr2, ROWS, COLS);
 	Sort(arr2, ROWS, COLS);
 	Print(arr2, ROWS, COLS);
 	cout << "Сумма элементов массива: " << Sum(arr2, ROWS, COLS);
 	cout << "Среднее арифметические элементов массива: " << Avg(arr2, ROWS, COLS) << endl;
+//	cout << "Минимальное значение в массиве: " << minValueIn(arr2, ROWS, COLS) << endl;
+//	cout << "Максимальное значение в массиве: " << maxValueIn(arr2, ROWS, COLS) << endl;
+//	cout << "Введите количество сдвигов: "; cin >> number1;
+//	shiftLeft(arr2,n, number_of_shifts);
+//	Print(arr2,n, number_of_shifts);
+//	shiftRight(arr2,n, number_of_shifts);
+//	Print(arr2,n, number_of_shifts);
+/*
+	int arr2[ROWS][COLS];
+	FillRand(double arr[][], ROWS, COLS);
+	FillRand(char arr[][], COLS, ROWS);*/
 }
-
-
-
