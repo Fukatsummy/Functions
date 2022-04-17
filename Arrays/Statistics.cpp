@@ -1,8 +1,7 @@
 #include"Statistics.h"
 #include"stdafx.h"
 
-template<typename T>
-int Sum(T arr[], const int n)//реализация
+template<typename T>int Sum(T arr[], const int n)//реализация
 {
 	T sum = 0;
 	for (int i = 0; i < n; i++)
@@ -20,8 +19,7 @@ int Sum(T arr[], const int n)//реализация
 //	}
 //	return sum;
 //}
-template<typename T>
-int Sum(T arr[ROWS][COLS], const int ROWS, const int COLS)
+template<typename T>int Sum(T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
 	T sum = 0;
 	for (int i = 0; i < ROWS; i++)
@@ -33,8 +31,7 @@ int Sum(T arr[ROWS][COLS], const int ROWS, const int COLS)
 	}return sum;
 }
 
-template<typename T>
-double Avg(T arr[], const int n)
+template<typename T>double Avg(T arr[], const int n)
 {
 	return Sum(arr, n) / n;
 }
@@ -42,8 +39,7 @@ double Avg(T arr[], const int n)
 //{
 //	return Sum(arr, n) / n;
 //}
-template<typename T>
-double Avg(T arr[ROWS][COLS], const int ROWS, const int COLS)
+template<typename T>double Avg(T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
 	return (double)Sum(arr, ROWS, COLS) / (ROWS*COLS);
 }

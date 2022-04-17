@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Constants.h" />
+    <ClInclude Include="double.h" />
     <ClInclude Include="FillRand.h" />
     <ClInclude Include="Print.h" />
     <ClInclude Include="Shift.h" />

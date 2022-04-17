@@ -3,10 +3,13 @@ using namespace std;
 
 #include"Constants.h"
 #include"FillRand.h"
+#include"FillRand.cpp"
 #include"Print.h"
 #include"Shift.h"
 #include"Sort.h"
 #include"Statistics.h"
+#include"Statistics.cpp"
+#include"Print.cpp"
 
 void main()
 {
@@ -31,7 +34,7 @@ void main()
 
 	cout << delimiter << endl;
 
-	const int m = 8;
+	/*const int m = 8;
 	double brr[m];
 	int number1;
 	int buffer1;
@@ -47,11 +50,10 @@ void main()
 	shiftLeft(brr, n, number1);
 	Print(brr, m);
 	shiftRight(brr, m, number1);
-	Print(brr, m);
+	Print(brr, m);*/
 
 	cout << delimiter << endl;
 
-	
 	int arr2[ROWS][COLS];
 	//const int n;
 	FillRand(arr2, ROWS, COLS);
