@@ -1,27 +1,29 @@
 #include"Statistics.h"
 #include"stdafx.h"
 
-int Sum(int arr[], const int n)//реализация
+template<typename T>
+int Sum(T arr[], const int n)//реализация
 {
-	int sum = 0;
+	T sum = 0;
 	for (int i = 0; i < n; i++)
 	{
 		sum += arr[i];
 	}
 	return sum;
 }
-double Sum(double arr[], const int n)//реализация
+//double Sum(double arr[], const int n)//реализация
+//{
+//	double sum = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		sum += arr[i];
+//	}
+//	return sum;
+//}
+template<typename T>
+int Sum(T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
-	double sum = 0;
-	for (int i = 0; i < n; i++)
-	{
-		sum += arr[i];
-	}
-	return sum;
-}
-int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	double sum = 0;
+	T sum = 0;
 	for (int i = 0; i < ROWS; i++)
 	{
 		for (int j = 0; j < COLS; j++)
@@ -31,20 +33,22 @@ int Sum(int arr[ROWS][COLS], const int ROWS, const int COLS)
 	}return sum;
 }
 
-double Avg(int arr[], const int n)
-{
-	return (double)Sum(arr, n) / n;
-}
-double Avg(double arr[], const int n)
+template<typename T>
+double Avg(T arr[], const int n)
 {
 	return Sum(arr, n) / n;
 }
-double Avg(int arr[ROWS][COLS], const int ROWS, const int COLS)
+//double Avg(double arr[], const int n)
+//{
+//	return Sum(arr, n) / n;
+//}
+template<typename T>
+double Avg(T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
 	return (double)Sum(arr, ROWS, COLS) / (ROWS*COLS);
 }
 
-int minValueIn(int arr[], const int n)
+template<typename T>int minValueIn(T arr[], const int n)
 {
 	int min = arr[1];
 	for (int i = 0; i < n; i++)
@@ -53,17 +57,16 @@ int minValueIn(int arr[], const int n)
 	}
 	return min;
 }
-double minValueIn(double arr[], const int n)
-{
-	double min = arr[1];
-	for (int i = 0; i < n; i++)
-	{
-		if (arr[i] < min)min = arr[i];
-	}
-	return min;
-}
-
-int maxValueIn(int arr[], const int n)
+//double minValueIn(T arr[], const int n)
+//{
+//	double min = arr[1];
+//	for (int i = 0; i < n; i++)
+//	{
+//		if (arr[i] < min)min = arr[i];
+//	}
+//	return min;
+//}
+template<typename T>int maxValueIn(T arr[], const int n)
 {
 	int max = arr[1];
 	for (int i = 0; i < n; i++)
@@ -72,12 +75,12 @@ int maxValueIn(int arr[], const int n)
 	}
 	return max;
 }
-double maxValueIn(double arr[], const int n)
-{
-	double max = arr[1];
-	for (int i = 0; i < n; i++)
-	{
-		if (arr[i] > max)max = arr[i];
-	}
-	return max;
-}
+//double maxValueIn(double arr[], const int n)
+//{
+//	double max = arr[1];
+//	for (int i = 0; i < n; i++)
+//	{
+//		if (arr[i] > max)max = arr[i];
+//	}
+//	return max;
+//}
