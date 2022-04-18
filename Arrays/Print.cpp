@@ -1,5 +1,7 @@
-#include"Print.h"
+//#include"Print.h"
 #include"stdafx.h"
+#include"Constants.h"
+
 template<typename T>void Print(T arr[], const int n)
 {
 	for (int i = 0; i < n; i++)

@@ -9,9 +9,6 @@ template<typename T>void FillRand(T arr[], const int n, int minRand, int maxRand
 		arr[i] = rand() % (maxRand - minRand) + minRand;
 	}
 }
-
-
-
 template<typename T>void FillRand(T arr[ROWS][COLS], const int ROWS, const int COLS, int minRand, int maxRand)//заполняет массив рандомным значением
 {
 	for (int i = 0; i < ROWS; i++)
