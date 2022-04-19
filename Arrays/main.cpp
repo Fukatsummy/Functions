@@ -10,6 +10,9 @@
 #include"Shift.h"
 #include"Sort.h"
 #include "stdafx.h"
+#include"Sort.cpp"
+#include "Statistics.cpp"
+
 
 //const int ROWS = 3;
 //const int COLS = 4;
